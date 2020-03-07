@@ -1,5 +1,5 @@
 file:
-  fileServerPath: 47.94.157.37
+  fileServerPath: httP://47.94.157.37
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver

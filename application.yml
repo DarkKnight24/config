@@ -1,5 +1,7 @@
 file:
   fileServerPath: http://47.94.157.37
+  config:
+    path: ${file.config.path}
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver

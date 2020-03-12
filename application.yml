@@ -1,7 +1,6 @@
 ########文件上传基本配置########
 file:
   fileServerPath: http://47.94.157.37
-<<<<<<< HEAD
 #########   eureka服务配置   ########
 eureka:
   client:
@@ -9,7 +8,6 @@ eureka:
       defaultZone: http://localhost:9999/eureka/
 
 #######   数据源及mybatis配置   ######
-=======
 
 #配置文件
 connect_timeout: 2
@@ -23,7 +21,6 @@ tracker_server: 47.94.157.37:22122
 
 
 ######Spring基本配置######
->>>>>>> bcf616c381cc0a59b2663556078e23109d19110b
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver

@@ -1,6 +1,14 @@
 ########文件上传基本配置########
 file:
   fileServerPath: http://47.94.157.37
+
+connect_timeout: 2
+network_timeout: 30
+charset: UTF-8
+http.tracker_http_port: 80
+http.anti_steal_token: no
+http.secret_key: FastDFS1234567890
+tracker_server: 47.94.157.37:22122
 #########   eureka服务配置   ########
 eureka:
   client:
@@ -9,18 +17,6 @@ eureka:
 
 #######   数据源及mybatis配置   ######
 
-#配置文件
-connect_timeout: 2
-network_timeout: 30
-charset: UTF-8
-http.tracker_http_port: 80
-http.anti_steal_token: no
-http.secret_key: FastDFS1234567890
-tracker_server: 47.94.157.37:22122
-
-
-
-######Spring基本配置######
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver

@@ -47,7 +47,7 @@ mybatis:
     map-underscore-to-camel-case: true
 
 pagehelper:
-  dialect: mysql
+  helper-dialect: mysql
   reasonable: true
 
 ########   日志输出配置   ########

@@ -1,5 +1,12 @@
 file:
   fileServerPath: http://47.94.157.37
+#########   eureka服务配置   ########
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9999/eureka/
+
+#######   数据源及mybatis配置   ######
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -23,15 +30,17 @@ spring:
       filters: stat
       connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
       use-global-data-source-stat: true
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:9999/eureka/
 mybatis:
   mapper-locations: classpath:sql/*Mapper.xml
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
+
+pagehelper:
+  dialect: mysql
+  reasonable: true
+
+########   日志输出配置   ########
 logging:
   level:
     com:

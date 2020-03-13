@@ -40,6 +40,9 @@ spring:
       filters: stat
       connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
       use-global-data-source-stat: true
+
+  jackson:
+    default-property-inclusion=non_null:
 mybatis:
   mapper-locations: classpath:sql/*Mapper.xml
   configuration:
@@ -56,3 +59,6 @@ logging:
     com:
       example:
         mapper: debug
+
+########   json输出   #######
+

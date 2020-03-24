@@ -13,7 +13,7 @@ tracker_server: 47.94.157.37:22122
 eureka:
   client:
     service-url:
-      defaultZone: http://47.94.157.37:9999/eureka/
+      defaultZone: http://localhost:9999/eureka/
 
 #######   数据源及mybatis配置   ######
 
